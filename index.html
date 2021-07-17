@@ -12,7 +12,7 @@
 
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://github.com/neon-coder">Neon-Coder</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,9 +20,6 @@
       </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="https://github.com/neon-coder">Visit me at github</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#about">About me</a>
                     </li>
@@ -46,7 +43,7 @@
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-100">About me</h1>
             <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="Picture" src="me.png ">
             <div class="text-center lg:w-2/3 w-full">
-                <p class="jumbotron mb-8 leading-relaxed">Hi this is <i>Vedanth</i> from India.I am 9 years old. Apart from going to school, I like to code.I have learned HTML, CSS, Javascript and python. I have maded some repositories also with them. My first bro (language) is Html and when I had
+                <p class="jumbotron mb-8 leading-relaxed">Hi this is <i>Vedanth</i> from India.I am 9 years old. Apart from going to school, I like to code.I have learned HTML, CSS, Javascript and python. I have maded some repositories also with them. My first language is Html and when I had
                     completed the html and css course I thought that I will make a websites but it is not that so good I thought. After that I had made this website. If you are interested in HTML CSS Javascript python you can buy that course on <a href="https://www.udemy.com">udemy</a>.
                     You can do python and make python courses free on <a href="https://trinket.io">Trinket</a> and code all languages on <a href="https://replit.com">Repl It</a> and for the best coding app is <a href="https://code.visualstudio.com/download">Visual Studio Code</a>You
                     can code anything on this</p>
@@ -178,19 +175,23 @@
                     </td>
                     <td style="text-align: end;">Trust rather a very intellgent system (T.R.A.V.I.S)</td>
                 </tr>
+                <tr>
+                    <td>
+                        <a href="https://github.com/neon-coder/notes"><img src="repositories/notes.png" alt=""></a>
+                    </td>
+                    <td style="text-align: end;">A reminder like notes</td>
+                </tr>
             </thead>
         </table>
     </div>
     <!-- Contact me -->
     <section class="text-gray-400 bg-gray-900 body-font relative">
-        <form action="mailto:norestincoder@gmail.com" method="post">
+        <form action="mailto:norestincoder@gmail.com" method="POST" enctype="multipart/form-data" name="Emailform">
             <div class="container px-5 py-24 mx-auto">
                 <div id="message" class="flex flex-col text-center w-full mb-12">
                     <hr>
                     <h1 class="container-fluid title-font font-medium sm:text-4xl text-3xl text-white">Contact Me</h1>
                     <hr>
-                    <br>
-                    <br>
                     <br>
                     <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Send me a message</p>
                 </div>
@@ -200,12 +201,18 @@
                             <div class="relative">
                                 <label for="name" class="leading-7 text-sm text-gray-600">Your Name</label>
                                 <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                <small id="namevalid" class="form-text text-muted invalid-feedback">
+                                    Your username must be 2-10 characters long and should not start with a number
+                                  </small>
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
                             <div class="relative">
                                 <label for="email" class="leading-7 text-sm text-gray-600">Your Email</label>
                                 <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                                    Your email must be a valid email
+                                </small>
                             </div>
                         </div>
                         <div class="p-2 w-full">
@@ -223,10 +230,40 @@
                         </div>
                     </div>
                 </div>
+                <div style="text-align: center;" class="text-gray-400 bg-gray-900 body-font relative">
+                    <!-- Button trigger modal -->
+                    <h5 style="color: whitesmoke;">or</h5>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Visit Me
+      </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Visit Me</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="text-align: center;"><a href="https://github.com/neon-coder">Gihtub : neon-coder</a></p>
+                                    <p style="text-align: center;"><a href="https://outlook.live.com">Outlook mail : vedanth199321@outlook.com</a></p>
+                                    <p style="text-align: center;"><a href="https://gmail.com">Goole mail : norestincoder@gmail.com</a></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </section>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
