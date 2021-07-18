@@ -218,11 +218,7 @@
                         <div class="p-2 w-full">
                             <div class="relative">
                                 <label for="message" class="leading-7 text-sm text-gray-600">Your Message</label>
-                                <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                                <h1 style="text-align: center;">Visit Me</h1>
-                                <p style="text-align: center;"><a href="https://github.com/neon-coder">Gihtub : neon-coder</a></p>
-                                <p style="text-align: center;"><a href="https://outlook.live.com">Outlook mail : vedanth199321@outlook.com</a></p>
-                                <p style="text-align: center;"><a href="https://gmail.com">Goole mail : norestincoder@gmail.com</a></p>
+                                <textarea style="color:hover: white;" id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                             </div>
                         </div>
                         <div class="p-2 w-full">
@@ -232,31 +228,33 @@
                 </div>
                 <div style="text-align: center;" class="text-gray-400 bg-gray-900 body-font relative">
                     <!-- Button trigger modal -->
-                    <h5 style="color: whitesmoke;">or</h5>
+                    <h5 style="color: whitesmoke;">if(yourName == "autofillHasbeenTurnedOf" || yourEmail == "AutoFillHasBeenTurnedOf" || yourMessage == "autoFillHasBeenTurnedOf"){
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Visit Me
+                          </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Visit Me</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p style="text-align: center;"><a href="https://github.com/neon-coder">Gihtub : neon-coder</a></p>
+                                                        <p style="text-align: center;"><a href="https://outlook.live.com">Outlook mail : vedanth199321@outlook.com</a></p>
+                                                        <p style="text-align: center;"><a href="https://gmail.com">Google mail : norestincoder@gmail.com</a></p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    }</h5>
 
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Visit Me
-      </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Visit Me</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p style="text-align: center;"><a href="https://github.com/neon-coder">Gihtub : neon-coder</a></p>
-                                    <p style="text-align: center;"><a href="https://outlook.live.com">Outlook mail : vedanth199321@outlook.com</a></p>
-                                    <p style="text-align: center;"><a href="https://gmail.com">Goole mail : norestincoder@gmail.com</a></p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
